@@ -1,5 +1,6 @@
 {
-    "name"        : "bodom78/kohana-imagefly",
+    "name"        : "ssulima/kohana-imagefly",
+    "type"        : "kohana-module",
     "description" : "Create resized / cropped images directly through url parameters.",
     "homepage"    : "https://github.com/bodom78/kohana-imagefly",
     "license"     : "MIT",

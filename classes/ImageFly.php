@@ -156,7 +156,10 @@ class ImageFly
         // Get values from request
         $params = Request::current()->param('params');
         $filepath = Request::current()->param('imagepath');
-        
+
+        // For url's type "abc%20"
+        $filepath = urldecode((string) $filepath);
+
         // If enforcing params, ensure it's a match
         if ($this->config['enforce_presets'] AND ! in_array($params, $this->config['presets']))
             throw new HTTP_Exception_404('The requested URL :uri was not found on this server.',
